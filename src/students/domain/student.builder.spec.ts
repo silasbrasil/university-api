@@ -1,4 +1,4 @@
-import { StudentBuilder } from "./student.entity.builder";
+import { StudentBuilder } from "./student.builder";
 
 describe("Student Entity Builder", () => {
   it("should create a student with all properties set", () => {

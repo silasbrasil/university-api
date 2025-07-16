@@ -1,4 +1,4 @@
-import { Student } from './student.entity';
+import { Student } from "./student";
 
 export class StudentBuilder<T extends Partial<Student>> {
   #student: T;
