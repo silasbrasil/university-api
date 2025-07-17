@@ -49,6 +49,11 @@ $ npm run test:cov
 $ npm run typeorm:migration:create --name={MIGRATION_NAME}
 ```
 
+```bash
+# apply all migrations
+$ npm run typeorm:migration:run
+```
+
 
 ## Resources
 

@@ -6,6 +6,7 @@ describe("Student Entity Builder", () => {
       .setId("123")
       .setName("John Doe")
       .setEmail("test@gmail.com")
+      .setActive(true)
       .setCreatedAt(new Date("2023-01-01"))
       .setUpdatedAt(new Date("2023-01-02"))
       .build();
@@ -14,6 +15,7 @@ describe("Student Entity Builder", () => {
       id: "123",
       name: "John Doe",
       email: "test@gmail.com",
+      active: true,
       createdAt: new Date("2023-01-01"),
       updatedAt: new Date("2023-01-02"),
     });
