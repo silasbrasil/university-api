@@ -23,6 +23,14 @@ export class StudentBuilder<T extends Partial<Student>> {
     return new StudentBuilder({ ...this.#student, email });
   }
 
+  setActive(active: boolean): StudentBuilder<T & { active: boolean }> {
+    return new StudentBuilder({ ...this.#student, active });
+  }
+
+  setDeletedAt(deletedAt: Date): StudentBuilder<T & { deletedAt?: Date }> {
+    return new StudentBuilder({ ...this.#student, deletedAt });
+  }
+
   setCreatedAt(createdAt: Date): StudentBuilder<T & { createdAt: Date }> {
     return new StudentBuilder({ ...this.#student, createdAt });
   }
